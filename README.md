@@ -19,10 +19,9 @@ File under consideration: DebugPersonDetailsIteration.java
 
 ## FAQ
 
-1. What is the use of exceptional breakpoint?
-- It is used to add a breakpoint at runtime where the exception has occured and helps to see the 
-program state at that instant. It encompasses the entire program.
-- This is added by going to Run > View Breakpoints. Add + Java Exception Breakpoint
-- Select the exception class. For eg: ClassCastException.
-- You can also use the existing 'Any Java Exception' and this will halt the program at runtime
-whenever any exception occurs.
+1. What is the use of method breakpoint?
+- It is used to add a breakpoint on the method so that when method is invoked, the program will halt and also
+halt when the method is about to exit. This will display all the values of variables from the method.
+- Another way to add a method breakpoint is from Run > View Breakpoints.
+Add Method breakpoint. Give fully qualified class name. And for method name you can give a method or give a pattern. Eg: get*. 
+This will add a breakpoint for all methods starting with get.. in the class.
