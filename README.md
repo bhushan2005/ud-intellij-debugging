@@ -13,18 +13,18 @@ Java Debugging with IntelliJ From Udemy
 
 ## Documentation
 
-File under consideration: DebugPerson.java
-Add breakpoint at System.out.println("personList:" + personList);
-
+File: DebugFactorial
+Place breakpoint at CalculatorUtil.factorial -> int result = 1;
 
 
 ## FAQ
 
-1. What is a class level watch?
-- Cannot think of a use case for this yet.
-- Its used to add a watch (expression) to all the items of a list.
-- Create a breakpoint after the line where arraylist is created.
-- Then in the variables space below, right click on the first item and Add Class level watch. For
-eg: this.getAge()>20.
-- This watch will be added and evaluated to all the items of the list. This will be displayed in the variable space.
-- If the watch is no longer required, then right click the watch expression and select 'Remove Watch'
+1. What is the use of a drop frame?
+- Drop frame is used to rewind back the call stack to a previous state.
+- This is done by setting a breakpoint in the code and debugging it.
+- When the control reaches breakpoint there could be multiple stack frames in the below left
+- You can select a previous frame and select drop frame.
+- This will drop all the frames from that point onwards and execution
+will resume from that same point (it will rewind). 
+- The values will also be set of that previous stack frame.
+- This option is called 'Reset Frame' in newer versions of IntelliJ.
