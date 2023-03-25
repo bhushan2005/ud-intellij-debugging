@@ -14,16 +14,17 @@ Java Debugging with IntelliJ From Udemy
 ## Documentation
 
 File under consideration: DebugPerson.java
-Add field watchpoint at private int age in Person.java
+Add breakpoint at System.out.println("personList:" + personList);
 
 
 
 ## FAQ
 
-1. What is a field watchpoint?
-- It is used to halt execution whenever a field is accessed or updated.
-- It is placed by clicking on left gutter where the instance field is declared.
-- It will display a red eye instead of red dot.
-- Right click on it to specify if access and updates need alerting.
-- Run the program
-- It will halt wherever the field is accessed or updated.
+1. What is a class level watch?
+- Cannot think of a use case for this yet.
+- Its used to add a watch (expression) to all the items of a list.
+- Create a breakpoint after the line where arraylist is created.
+- Then in the variables space below, right click on the first item and Add Class level watch. For
+eg: this.getAge()>20.
+- This watch will be added and evaluated to all the items of the list. This will be displayed in the variable space.
+- If the watch is no longer required, then right click the watch expression and select 'Remove Watch'
