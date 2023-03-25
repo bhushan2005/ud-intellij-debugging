@@ -19,9 +19,8 @@ Place breakpoint at stream.of(..) line.
 
 ## FAQ
 
-1. What are features provided for debugging streams and lambdas?
-- If you place a breakpoint on a code with Stream.of... then Intellij will ask you
-to which lambda do you want to add the breakpoint. Any specific or all.
-- Then when you run the debug, it will halt at that lambda and show the value in the below variable space.
-- You can click on "Trace Current Stream Chain" to see all the conversions and filtering in a
-graphical view.
+1. What are features provided for controlling the stepping (step into)?
+- Go to Settings. Search for Stepping.
+- This will show you what methods, classes, packages will be skipped for 'Skip Into'
+- For eg: if you want that the step into should skip the Spring framework classes, then add
+org.springframework.* in filter pattern.
