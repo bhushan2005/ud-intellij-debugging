@@ -13,7 +13,8 @@ Java Debugging with IntelliJ From Udemy
 
 ## Documentation
 
-File under consideration: DebugPersonDetailsIteration.java
+File under consideration: DebugPersonDetails.java
+Add method breakpoint at getPersonData method
 
 
 
@@ -25,3 +26,4 @@ halt when the method is about to exit. This will display all the values of varia
 - Another way to add a method breakpoint is from Run > View Breakpoints.
 Add Method breakpoint. Give fully qualified class name. And for method name you can give a method or give a pattern. Eg: get*. 
 This will add a breakpoint for all methods starting with get.. in the class.
+- The method breakpoint gets displayed as red diamond in the left gutter instead of red dot.
