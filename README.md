@@ -13,17 +13,19 @@ Java Debugging with IntelliJ From Udemy
 
 ## Documentation
 
-File under consideration: DebugPersonDetails.java
-Add method breakpoint at getPersonData method
+File under consideration: DebugPersonDetailsIteration.java
+Add action breakpoint at Person person = personList.get(i);
 
 
 
 ## FAQ
 
-1. What is the use of method breakpoint?
-- It is used to add a breakpoint on the method so that when method is invoked, the program will halt and also
-halt when the method is about to exit. This will display all the values of variables from the method.
-- Another way to add a method breakpoint is from Run > View Breakpoints.
-Add Method breakpoint. Give fully qualified class name. And for method name you can give a method or give a pattern. Eg: get*. 
-This will add a breakpoint for all methods starting with get.. in the class.
-- The method breakpoint gets displayed as red diamond in the left gutter instead of red dot.
+1. What is the use of action breakpoint?
+- It is similar to logger statement except that we are not changing the code. 
+- An action breakpoint is added by pressing shift and clicking on the left gutter of the code.
+- It displays a yellow dot instead of red dot.
+- The execution doesn't halt at the action breakpoint. But it just prints that it has reached breakpoint.
+- You can also evaluate and log any expression for action breakpoint. This is done by using 'Evaluate and Log' field in 
+the breakpoint dialog "personList.get(i).getName()"
+- You can uncheck 'Breakpoint hit' checkbox if you think that you don't need the default text.
+- In 'View Breakpoints' this appears as Java Line Breakpoint.
