@@ -13,14 +13,18 @@ Java Debugging with IntelliJ From Udemy
 
 ## Documentation
 
-File: DebugStreamAndLambda
-Place breakpoint at stream.of(..) line.
+
 
 
 ## FAQ
 
-1. What are features provided for controlling the stepping (step into)?
-- Go to Settings. Search for Stepping.
-- This will show you what methods, classes, packages will be skipped for 'Skip Into'
-- For eg: if you want that the step into should skip the Spring framework classes, then add
-org.springframework.* in filter pattern.
+1. What are renderers and how can we update them?
+- Renderer are the way the list elements are rendered in the variable space during debugging.
+- By default if we have a list of objects then we need to click and open each and every
+element to see the values of the fields. This can be time consuming.
+- So renderer can help to print the expression in a user friendly way so that you do not have to expand each and
+every element. But this is at expense of performance.
+- Go to Settings. Search for Renderer.
+- Add a renderer for say Person class. The expression can be String.format("Name: %s, Age: %d", person.getName(), person.getAge())
+- You can click 'On-demand' so that the rendering will happen only if you click. Thus not causing performance
+impact.
