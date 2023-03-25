@@ -13,19 +13,17 @@ Java Debugging with IntelliJ From Udemy
 
 ## Documentation
 
-File under consideration: DebugPerson.java
-Watch placed for personList and personMap
+File under consideration: DebugPersonDetailsIteration.java
+
 
 
 ## FAQ
 
-1. What is the use of filter?
-- In case during debugging you have an array or map with huge number of elements, then 
-it could be difficult to see the values of every item.
-- In such cases, you can use Filter which can filter the list or map to the specific 
-condition.
-
-2. How to add a filter?
-- This can be done in variable view or you can add the variable to the watch and then add the filter there.
-- Right click on list and select 'Filter' and give the condition as: this.getAge() > 40
-- If its a map, then you can use this.getKey().equals(2)
+1. What is the use of conditional breakpoint?
+- In case you have a list with large number of elements and there are some suspect elements
+for which you need to apply breakpoint and observe the code, then it will be difficult to use a 
+normal breakpoint as this will halt the code on every iteration.
+- In this case, conditional breakpoint can be used.
+- Right click the normal breakpoint created and put an expression in Conditional field. For eg:
+  !(personList.get(i) instanceof Person). This will halt the execution when the personList element fails the condition.
+- You can then do step into or also you can directly evaluate expression for the suspect element.
