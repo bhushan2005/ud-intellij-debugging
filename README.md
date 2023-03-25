@@ -14,25 +14,18 @@ Java Debugging with IntelliJ From Udemy
 ## Documentation
 
 File under consideration: DebugPerson.java
+Watch placed for personList and personMap
 
 
 ## FAQ
 
-1. What is a Watch and how to add it?
-- When the code is halted at breakpoint, then right click any variable and select "Add to Watches".
-- Instead of just outputting a variable you can also write expression in the watch window. Eg: person.getAge()>30. This will show if its true or false.
+1. What is the use of filter?
+- In case during debugging you have an array or map with huge number of elements, then 
+it could be difficult to see the values of every item.
+- In such cases, you can use Filter which can filter the list or map to the specific 
+condition.
 
-2. What is 'Evaluate Expression'?
-- This is used to check the value of some variable when the program has paused execution due to breakpoint.
-- Right click on the variable and choose 'Evaluate Expression'.
-- There too, you can call any getter method on the variable. For eg: person.getName().
-
-3. When do you use Watch and Evaluate Expressions?
-- You use watch if you want to monitor some variable or expression throughout the program execution.
-- You use 'Evauate Expressions' when you want to check the value of a variable or expression just once.
-
-4. Where can you see the values of variables?
-- When the program is halted at the breakpoint you can see the values at:
-- You can see in variables panel below.
-- Inline
-- In tool tip on the variable.
+2. How to add a filter?
+- This can be done in variable view or you can add the variable to the watch and then add the filter there.
+- Right click on list and select 'Filter' and give the condition as: this.getAge() > 40
+- If its a map, then you can use this.getKey().equals(2)
