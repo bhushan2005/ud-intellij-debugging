@@ -13,7 +13,7 @@ Java Debugging with IntelliJ From Udemy
 
 ## Documentation
 
-File under consideration: DebugPersonDetailsIteration.java
+File under consideration: DebugPerson.java
 
 
 ## FAQ
@@ -29,4 +29,10 @@ File under consideration: DebugPersonDetailsIteration.java
 
 3. When do you use Watch and Evaluate Expressions?
 - You use watch if you want to monitor some variable or expression throughout the program execution.
-- You use 'Evauate Expressions' when you want to check the value of a variable or expression just oncel
+- You use 'Evauate Expressions' when you want to check the value of a variable or expression just once.
+
+4. Where can you see the values of variables?
+- When the program is halted at the breakpoint you can see the values at:
+- You can see in variables panel below.
+- Inline
+- In tool tip on the variable.
