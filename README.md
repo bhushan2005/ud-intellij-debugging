@@ -13,19 +13,20 @@ Java Debugging with IntelliJ From Udemy
 
 ## Documentation
 
+File under consideration: DebugPersonDetailsIteration.java
 
 
 ## FAQ
 
-1. What is Smart Step Into?
-- If you have setup breakpoint and then debug program, then execution will halt at the breakpoint.
-- Then if you do Step Into, then the execution will go step by step from left to right for all the function calls on the line.
-- Instead, if you want to skip some function calls on the line and directly step into function call which is in the middle, then use 'Smart Step Into'
-- This option is present in Run > Debugging Actions > Smart Step Into.
+1. What is a Watch and how to add it?
+- When the code is halted at breakpoint, then right click any variable and select "Add to Watches".
+- Instead of just outputting a variable you can also write expression in the watch window. Eg: person.getAge()>30. This will show if its true or false.
 
-2. What is 'Run to Cursor' and 'Force run to cursor'?
-- If you have setup breakpoint and then debug program, then execution will halt at the breakpoint.
-- Then if you want to move to a location which does not have breakpoint, then instead of doing multiple step overs, you can place the cursor at the start of that line and click 'Run to cursor'
-- This will bring the control to the start of that line and pause.
-- The above method will also halt if there are any breakpoints on the way.
-- If you do not want that behaviour, then you 'Force run to cursor'. This will skip any intermediate breakpoints.
+2. What is 'Evaluate Expression'?
+- This is used to check the value of some variable when the program has paused execution due to breakpoint.
+- Right click on the variable and choose 'Evaluate Expression'.
+- There too, you can call any getter method on the variable. For eg: person.getName().
+
+3. When do you use Watch and Evaluate Expressions?
+- You use watch if you want to monitor some variable or expression throughout the program execution.
+- You use 'Evauate Expressions' when you want to check the value of a variable or expression just oncel
