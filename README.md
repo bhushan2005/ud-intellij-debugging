@@ -13,18 +13,17 @@ Java Debugging with IntelliJ From Udemy
 
 ## Documentation
 
-File under consideration: DebugPersonDetailsIteration.java
-Add action breakpoint at Person person = personList.get(i);
+File under consideration: DebugPerson.java
+Add field watchpoint at private int age in Person.java
 
 
 
 ## FAQ
 
-1. What is the use of force return or throw exception?
-- It is used to force return value that you want to or throw an exception from the breakpoint.
-- Set a breakpoint inside a function.
-- Start the program. When the execution reaches the breakpoint, it will halt.
-- From the lower left bottom call stack, select the method and right click.
-- You can force return a value of your choice or throw an exception.
-- After that resume the program.
-- The program run will have the updated return value or exception.
+1. What is a field watchpoint?
+- It is used to halt execution whenever a field is accessed or updated.
+- It is placed by clicking on left gutter where the instance field is declared.
+- It will display a red eye instead of red dot.
+- Right click on it to specify if access and updates need alerting.
+- Run the program
+- It will halt wherever the field is accessed or updated.
