@@ -13,18 +13,15 @@ Java Debugging with IntelliJ From Udemy
 
 ## Documentation
 
-File: DebugFactorial
-Place breakpoint at CalculatorUtil.factorial -> int result = 1;
+File: DebugStreamAndLambda
+Place breakpoint at stream.of(..) line.
 
 
 ## FAQ
 
-1. What is the use of a drop frame?
-- Drop frame is used to rewind back the call stack to a previous state.
-- This is done by setting a breakpoint in the code and debugging it.
-- When the control reaches breakpoint there could be multiple stack frames in the below left
-- You can select a previous frame and select drop frame.
-- This will drop all the frames from that point onwards and execution
-will resume from that same point (it will rewind). 
-- The values will also be set of that previous stack frame.
-- This option is called 'Reset Frame' in newer versions of IntelliJ.
+1. What are features provided for debugging streams and lambdas?
+- If you place a breakpoint on a code with Stream.of... then Intellij will ask you
+to which lambda do you want to add the breakpoint. Any specific or all.
+- Then when you run the debug, it will halt at that lambda and show the value in the below variable space.
+- You can click on "Trace Current Stream Chain" to see all the conversions and filtering in a
+graphical view.
